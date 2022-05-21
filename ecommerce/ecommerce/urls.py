@@ -22,5 +22,6 @@ urlpatterns = [
     # main app
     path('', include('main.urls')),
 
-    
+    # admin panel
+    path('', include('adminpanel.urls')),
 ]

@@ -37,9 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'colorfield',
+
     # main application
     'main',
     'product',
+    'adminpanel',
 ]
 
 MIDDLEWARE = [
@@ -122,6 +125,7 @@ USE_TZ = True
 
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # TEMPLATE_URL = 'templates/'
 # TEMPLATE_DIR = os.path.join(BASE_DIR, TEMPLATE_URL)
 
